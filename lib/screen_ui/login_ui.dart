@@ -1,3 +1,5 @@
+// ignore_for_file: body_might_complete_normally_nullable
+
 import 'package:database_school/screen_ui/home_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
@@ -5,7 +7,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const users = const {
   'admin@gmail.com': '12345',
-  'itsupport@gmail.com': '12345',
+  'it@gmail.com': '12345',
 };
 
 class LoginUI extends StatelessWidget {

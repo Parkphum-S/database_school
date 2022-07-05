@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:custom_grid_view/custom_grid_view.dart';
 import 'package:database_school/screen_ui/assessments_ui.dart';
 import 'package:database_school/screen_ui/attendance_ui.dart';
@@ -21,13 +23,13 @@ class _HomeUIState extends State<HomeUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue[800],
+        backgroundColor: Colors.white,
         title: Text(
           'school',
           style: TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
         centerTitle: true,
@@ -179,14 +181,14 @@ class _HomeUIState extends State<HomeUI> {
                       );
                     },
                     child: Image.asset(
-                      'assets/images/events.png',
+                      'assets/images/attendance.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Container(
                   child: Text(
-                    'events',
+                    'Attendance',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -210,14 +212,14 @@ class _HomeUIState extends State<HomeUI> {
                       );
                     },
                     child: Image.asset(
-                      'assets/images/events.png',
+                      'assets/images/Finances.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Container(
                   child: Text(
-                    'events',
+                    'Finances',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -241,14 +243,14 @@ class _HomeUIState extends State<HomeUI> {
                       );
                     },
                     child: Image.asset(
-                      'assets/images/events.png',
+                      'assets/images/Messages.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Container(
                   child: Text(
-                    'events',
+                    'Messages',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -272,14 +274,14 @@ class _HomeUIState extends State<HomeUI> {
                       );
                     },
                     child: Image.asset(
-                      'assets/images/events.png',
+                      'assets/images/Grade.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Container(
                   child: Text(
-                    'events',
+                    'Grade',
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
