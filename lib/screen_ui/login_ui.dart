@@ -1,7 +1,5 @@
 import 'package:database_school/screen_ui/home_ui.dart';
 import 'package:database_school/screen_ui/register_ui.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,8 +12,6 @@ class LoginUI extends StatefulWidget {
 }
 
 class _LoginUIState extends State<LoginUI> {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  @override
   @override
   Widget build(BuildContext context) {
     return Scaffold(
