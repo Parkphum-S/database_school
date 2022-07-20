@@ -1,6 +1,5 @@
+import 'package:database_school/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'screens/signin_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,13 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutterFire Samples',
+      title: 'Database School',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.blue,
         brightness: Brightness.dark,
       ),
-      home: SignInScreen(),
+      home: SplashScreen(),
     );
   }
 }

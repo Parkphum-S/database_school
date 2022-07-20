@@ -74,9 +74,12 @@ class _SignInScreenState extends State<SignInScreen> {
                       TextField(
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
-                          fillColor: Color.fromARGB(255, 112, 111, 111),
+                          fillColor: Colors.white,
                           filled: true,
                           hintText: 'ป้อนรหัสนักศึกษา',
+                          hintStyle: TextStyle(
+                            color: Colors.grey[400],
+                          ),
                           prefixIcon: Icon(
                             FontAwesomeIcons.user,
                             color: Colors.blue,
@@ -119,9 +122,12 @@ class _SignInScreenState extends State<SignInScreen> {
                       TextField(
                         keyboardType: TextInputType.text,
                         decoration: InputDecoration(
-                          fillColor: Color.fromARGB(255, 112, 111, 111),
+                          fillColor: Colors.white,
                           filled: true,
                           hintText: 'ป้อนรหัสผ่าน',
+                          hintStyle: TextStyle(
+                            color: Colors.grey[400],
+                          ),
                           prefixIcon: Icon(
                             Icons.lock_outline,
                             color: Colors.blue,
@@ -221,7 +227,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   }
                   return CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      Color.fromARGB(255, 241, 70, 7),
+                      Colors.orange,
                     ),
                   );
                 },

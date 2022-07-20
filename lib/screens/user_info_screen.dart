@@ -1,5 +1,5 @@
 import 'package:database_school/screens/home_screen.dart';
-import 'package:database_school/screens/signin_screen.dart';
+import 'package:database_school/screens/sign_in_screen.dart';
 import 'package:database_school/utils/authentication.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
