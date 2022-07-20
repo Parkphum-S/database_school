@@ -63,12 +63,51 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
-                  hintText: 'ป้อนรหัสนักศึกษา',
+                  hintText: 'ชื่อนักศึกษา',
                   hintStyle: TextStyle(
                     color: Colors.grey[400],
                   ),
                   prefixIcon: Icon(
                     FontAwesomeIcons.user,
+                    color: Colors.blue,
+                  ),
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blue,
+                      width: 1.5,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(50.0),
+                    ),
+                    gapPadding: 5,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.blue,
+                      width: 1.5,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(50.0),
+                    ),
+                    gapPadding: 5,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              TextField(
+                keyboardType: TextInputType.text,
+                decoration: InputDecoration(
+                  fillColor: Colors.white,
+                  filled: true,
+                  hintText: 'ป้อนรหัสนักศึกษา',
+                  hintStyle: TextStyle(
+                    color: Colors.grey[400],
+                  ),
+                  prefixIcon: Icon(
+                    FontAwesomeIcons.idCard,
                     color: Colors.blue,
                   ),
                   floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -107,7 +146,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     color: Colors.grey[400],
                   ),
                   prefixIcon: Icon(
-                    FontAwesomeIcons.user,
+                    Icons.email,
                     color: Colors.blue,
                   ),
                   floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -146,7 +185,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     color: Colors.grey[400],
                   ),
                   prefixIcon: Icon(
-                    FontAwesomeIcons.user,
+                    FontAwesomeIcons.phone,
                     color: Colors.blue,
                   ),
                   floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -185,7 +224,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     color: Colors.grey[400],
                   ),
                   prefixIcon: Icon(
-                    FontAwesomeIcons.user,
+                    FontAwesomeIcons.key,
                     color: Colors.blue,
                   ),
                   floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -224,7 +263,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     color: Colors.grey[400],
                   ),
                   prefixIcon: Icon(
-                    FontAwesomeIcons.user,
+                    FontAwesomeIcons.key,
                     color: Colors.blue,
                   ),
                   floatingLabelBehavior: FloatingLabelBehavior.always,
