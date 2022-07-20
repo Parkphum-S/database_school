@@ -34,7 +34,6 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                 });
                 User? user =
                     await Authentication.signInWithGoogle(context: context);
-
                 setState(() {
                   _isSigningIn = false;
                 });
@@ -57,14 +56,14 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                   children: <Widget>[
                     Image(
                       image: AssetImage("assets/images/google_logo.png"),
-                      height: 35.0,
+                      height: 20.0,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 10),
                       child: Text(
                         'Sign in with Google',
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 14,
                           color: Colors.black54,
                           fontWeight: FontWeight.w600,
                         ),

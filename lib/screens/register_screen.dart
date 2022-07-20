@@ -64,6 +64,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   fillColor: Colors.white,
                   filled: true,
                   hintText: 'ป้อนรหัสนักศึกษา',
+                  hintStyle: TextStyle(
+                    color: Colors.grey[400],
+                  ),
                   prefixIcon: Icon(
                     FontAwesomeIcons.user,
                     color: Colors.blue,
@@ -100,6 +103,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   fillColor: Colors.white,
                   filled: true,
                   hintText: 'ป้อนอีเมล์',
+                  hintStyle: TextStyle(
+                    color: Colors.grey[400],
+                  ),
                   prefixIcon: Icon(
                     FontAwesomeIcons.user,
                     color: Colors.blue,
@@ -136,6 +142,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   fillColor: Colors.white,
                   filled: true,
                   hintText: 'ป้อนเบอร์โทรศัพท์',
+                  hintStyle: TextStyle(
+                    color: Colors.grey[400],
+                  ),
                   prefixIcon: Icon(
                     FontAwesomeIcons.user,
                     color: Colors.blue,
@@ -172,6 +181,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   fillColor: Colors.white,
                   filled: true,
                   hintText: 'ป้อนรหัสผ่าน',
+                  hintStyle: TextStyle(
+                    color: Colors.grey[400],
+                  ),
                   prefixIcon: Icon(
                     FontAwesomeIcons.user,
                     color: Colors.blue,
@@ -208,6 +220,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   fillColor: Colors.white,
                   filled: true,
                   hintText: 'ป้อนรยืนยันรหัสผ่าน',
+                  hintStyle: TextStyle(
+                    color: Colors.grey[400],
+                  ),
                   prefixIcon: Icon(
                     FontAwesomeIcons.user,
                     color: Colors.blue,
@@ -249,7 +264,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 30, 42, 76),
+                    primary: Color.fromARGB(255, 78, 121, 240),
                     minimumSize: const Size.fromHeight(60.0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50.0),
