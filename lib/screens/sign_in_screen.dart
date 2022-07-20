@@ -13,7 +13,7 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 233, 233, 233),
+      backgroundColor: Color.fromARGB(255, 155, 154, 154),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -22,6 +22,7 @@ class _SignInScreenState extends State<SignInScreen> {
           ),
           child: Column(
             mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Row(),
               Expanded(
@@ -37,7 +38,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       children: [
                         Image.asset(
                           'assets/images/ideaspai.jpeg',
-                          height: 120.0,
+                          height: 130.0,
                         ),
                         SizedBox(height: 10),
                         Text(
@@ -68,8 +69,10 @@ class _SignInScreenState extends State<SignInScreen> {
                   padding: EdgeInsets.only(
                       right: 35,
                       left: 35,
-                      top: MediaQuery.of(context).size.height * 0.00005),
+                      top: MediaQuery.of(context).size.height * 0.005),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       TextField(
                         keyboardType: TextInputType.text,
@@ -182,7 +185,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 ],
               ),
               SizedBox(
-                height: 15.0,
+                height: 10.0,
               ),
               Padding(
                 padding: EdgeInsets.only(left: 95.0, right: 95.0),
@@ -204,7 +207,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
               ),
               SizedBox(
-                height: 30.0,
+                height: 20.0,
               ),
               Text(
                 'Or login with',
@@ -215,7 +218,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
               ),
               SizedBox(
-                height: 10.0,
+                height: 5.0,
               ),
               FutureBuilder(
                 future: Authentication.initializeFirebase(context: context),
@@ -233,7 +236,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 },
               ),
               SizedBox(
-                height: 10.0,
+                height: 5.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
