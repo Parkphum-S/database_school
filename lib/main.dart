@@ -1,14 +1,22 @@
-import 'package:database_school/screen_ui/splash_screen_ui.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/sign_in_screen.dart';
+
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'FlutterFire Samples',
       debugShowCheckedModeBanner: false,
-      home: SplashScreenUI(),
       theme: ThemeData(
-        fontFamily: 'Kanit',
+        primarySwatch: Colors.indigo,
+        brightness: Brightness.dark,
       ),
-    ),
-  );
+      home: SignInScreen(),
+    );
+  }
 }
