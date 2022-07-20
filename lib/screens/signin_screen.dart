@@ -1,4 +1,3 @@
-import 'package:database_school/res/custom_colors.dart';
 import 'package:database_school/screens/register_screen.dart';
 import 'package:database_school/utils/authentication.dart';
 import 'package:database_school/widgets/google_sign_in_button.dart';
@@ -222,7 +221,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   }
                   return CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      CustomColors.firebaseOrange,
+                      Color.fromARGB(255, 241, 70, 7),
                     ),
                   );
                 },

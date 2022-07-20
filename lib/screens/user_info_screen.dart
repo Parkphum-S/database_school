@@ -1,7 +1,7 @@
-import 'package:database_school/res/custom_colors.dart';
-import 'package:database_school/screens/sign_in_screen.dart';
+import 'package:database_school/screens/home_screen.dart';
+import 'package:database_school/screens/signin_screen.dart';
 import 'package:database_school/utils/authentication.dart';
-import 'package:database_school/widgets/app_bar_title.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -77,7 +77,7 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                     )
                   : ClipOval(
                       child: Material(
-                        color: CustomColors.firebaseGrey.withOpacity(0.3),
+                        color: Colors.grey[400],
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Icon(
@@ -90,7 +90,7 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                     ),
               SizedBox(height: 16.0),
               Text(
-                'Hello',
+                'ยินดีต้อนรับ',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 26,
@@ -113,6 +113,43 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                   letterSpacing: 0.5,
                 ),
               ),
+              SizedBox(height: 35.0),
+              _isSigningOut
+                  ? CircularProgressIndicator(
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                    )
+                  : ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                          Color.fromARGB(255, 21, 132, 243),
+                        ),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
+                      onPressed: () async {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: ((context) => HomeScreen()),
+                          ),
+                        );
+                      },
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+                        child: Text(
+                          'Home',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            letterSpacing: 2,
+                          ),
+                        ),
+                      ),
+                    ),
               SizedBox(height: 35.0),
               _isSigningOut
                   ? CircularProgressIndicator(
